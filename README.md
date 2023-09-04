@@ -9,7 +9,6 @@
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
   - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
 - [Author](#author)
 
 ## Overview
@@ -38,12 +37,41 @@ Users should be able to:
 
 ### What I learned
 
+```html
+<div class="price-toggle">
+  <div class="indicator"></div>
+</div>
+```
+
+```css
+.price-toggle {
+  position: relative;
+  width: 5rem;
+  height: 2.5rem;
+  border-radius: 2.5rem;
+  margin-inline: 1em;
+  background: var(--clr-primary--linear-gradient);
+  cursor: pointer;
+}
+
+.indicator {
+  transition: 0.5s;
+  position: absolute;
+  top: 0;
+  inset-inline-end: 0;
+  width: 2.5rem;
+  height: 100%;
+  background-color: var(--clr-neutral--white);
+  border-radius: 2.5rem;
+  transform: scale(0.8);
+}
+
+.clicked {
+  inset-inline-end: 2.5rem;
+}
+```
+
 ### Continued development
-
-### Useful resources
-
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
 
 ## Author
 

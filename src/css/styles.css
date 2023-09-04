@@ -34,6 +34,7 @@ html {
 
 body {
   min-height: 100vh;
+  font-family: var(--ff-primary);
   font-size: var(--fz-default);
   background-color: var(--clr-neutral--very-light-grayish-blue);
 }
@@ -62,12 +63,30 @@ ul {
   margin-block: 1em;
 }
 
-.toggler {
-  width: 7rem;
-  height: 3rem;
-  border: 1px solid var(--clr-neutral--dark-grayish-blue);
-  border-radius: 100vmax;
+.price-toggle {
+  position: relative;
+  width: 5rem;
+  height: 2.5rem;
+  border-radius: 2.5rem;
   margin-inline: 1em;
+  background: var(--clr-primary--linear-gradient);
+  cursor: pointer;
+}
+
+.indicator {
+  transition: 0.5s;
+  position: absolute;
+  inset-block-start: 0;
+  inset-inline-end: 0;
+  width: 2.5rem;
+  height: 100%;
+  background-color: var(--clr-neutral--white);
+  border-radius: 2.5rem;
+  transform: scale(0.8);
+}
+
+.clicked {
+  inset-inline-end: 2.5rem;
 }
 
 .pricing-card {
@@ -113,7 +132,7 @@ ul {
 }
 
 .pricing-card__amount {
-  font-size: 4.8rem;
+  font-size: 5.6rem;
 }
 
 .pricing-card__features {
