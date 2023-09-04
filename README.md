@@ -73,6 +73,8 @@ Users should be able to:
 
 ### Continued development
 
+The position was really getting on my nerves but as always I nailed it in the best possible way I could think of and going forward I will looking at css position and brush up on those.
+
 ## Author
 
 - Website - [George Asiedu](https://www.georgeasiedu.tech)
